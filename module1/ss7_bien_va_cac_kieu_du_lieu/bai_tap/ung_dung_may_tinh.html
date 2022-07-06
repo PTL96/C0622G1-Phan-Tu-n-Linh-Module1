@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h3>Caculator</h3>
+<input type="number" name="hang1" id="A">
+<input type="number" name="hang2" id="B"><br><br>
+<button id="phepcong" type="button" onclick="tinh_cong()" value="c">Addition(+)</button>
+<button id="pheptru" type="button" onclick="tinh_tru()" value="v">Subtraction(-)</button>
+<button id="phepnhan" type="button" onclick="tinh_nhan()" value="n">Multiplication(*)</button>
+<button id="phepchia" type="button" onclick="tinh_chia()" value="m">Division(/)</button>
+<p id="kq"></p>
+<script>
+    let hang1;
+    let hang2;
+    let kq
+
+    function tinh_cong() {
+        hang1 = parseInt(document.getElementById("A").value);
+        hang2 = parseInt(document.getElementById("B").value);
+        kq = hang1 + hang2;
+        document.getElementById('kq').innerHTML = kq
+    }
+
+    function tinh_tru() {
+         hang1 = parseInt(document.getElementById("A").value);
+         hang2 = parseInt(document.getElementById("B").value);
+         kq = hang1 - hang2;
+        document.getElementById('kq').innerHTML = kq
+    }
+    function tinh_nhan() {
+        hang1 = parseInt(document.getElementById("A").value);
+        hang2 = parseInt(document.getElementById("B").value);
+        kq = hang1 * hang2;
+        document.getElementById('kq').innerHTML = kq
+    }
+    function tinh_chia() {
+        hang1 = parseInt(document.getElementById("A").value);
+        hang2 = parseInt(document.getElementById("B").value);
+        kq = hang1 / hang2;
+        document.getElementById('kq').innerHTML = kq
+
+    }
+
+</script>
+
+
+</body>
+</html>

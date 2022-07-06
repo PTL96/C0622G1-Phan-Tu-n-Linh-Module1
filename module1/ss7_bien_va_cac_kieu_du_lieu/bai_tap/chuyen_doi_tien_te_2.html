@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ USD sang VNĐ</title>
+</head>
+<body>
+<h3>Amount</h3>
+<input type="text" name="amount" id="money">
+<h3>From Curency</h3>
+<select id="from">
+    <option value="VN">Việt Nam</option>
+    <option value="USD">USD</option>
+</select>
+<h3>To Currency</h3>
+<select id="to">
+    <option value="VN">Việt Nam</option>
+    <option value="USD">USD</option>
+</select>
+<input type="button" onclick="tinh()" value="convert">
+
+<script>
+
+    function tinh() {
+        let money = document.getElementById("money").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let kq=0;
+        if (from==="VN" && to==="USD"){
+            kq=(money/23000)
+        }
+        if (from==="USD" && to==="VN"){
+            kq=(money*23000)
+        }
+        if (from==="USD" && to==="USD"){
+            kq=(money)
+        }
+        if (from==="VN" && to==="VN"){
+            kq=(money)
+        }
+
+
+        alert(kq)
+    }
+</script>
+
+</body>
+</html>
