@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>a</title>
 </head>
 <body>
-$END$
+<table>
+    <tr>
+        <td><input type="text" name="cannang" id="A"> Cân nặng</td>
+        <td><input type="text" name="chieucao" id="B"> Chiều cao</td>
+        <td>
+            <button type="button" onclick="check()" value="kt">Kiểm Tra</button>
+        </td>
+    </tr>
+</table>
+<script>
+    let canNang
+    let chieuCao
+    let bmi
+    let kq
+
+    function check() {
+        canNang = parseInt(document.getElementById("A").value);
+        chieuCao = parseInt(document.getElementById("B").value);
+        bmi = canNang / (chieuCao ^ 2)
+
+        if (bmi < 18.5) {
+            document.write("Gầy");
+        } else if (bmi < 25.0) {
+            document.write("Bình Thường");
+        } else if (bmi < 30.0) {
+            document.write("Béo");
+        } else {
+            document.write("Béo Phì");
+        }
+        document.getElementById('kq').innerHTML
+
+    }
+
+
+
+</script>
+
 </body>
 </html>
