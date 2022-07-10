@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10</title>
+</head>
+<body>
+<!--Giá điện 0-49kwh = 1600đ; 50-100kwh = 1700đ-->
+<script>
+    let soKwh=parseInt(prompt("Nhập số kwh đã sử dụng"));
+    let giaTien=0
+    if (soKwh<50){
+        giaTien=soKwh*1600;
+    }else giaTien=soKwh*1700
+    alert(giaTien)
+</script>
+</body>
+</html>

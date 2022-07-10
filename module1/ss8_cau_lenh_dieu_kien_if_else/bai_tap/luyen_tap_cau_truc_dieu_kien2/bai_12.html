@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+</head>
+<body>
+<!--ngân hàng MB cho vay 100.000.000VNĐ, với lãi suất năm là 8%, lãi suất tháng 0.66%
+Theo công thức tính lãi suất kép của ngân hàng (số tiền vay*(1 + 8%)*thoi gian vay(năm) -->
+<script>
+    let soTienVay=parseInt(prompt("Nhập số tiền cần vay"));
+    let thoiGianVay=parseInt(prompt("Nhập thời gian vay(đơn vị:Tháng)"));
+    let laiXuat=0
+    if (thoiGianVay<12){
+        laiXuat=soTienVay*(1+0.066*(thoiGianVay/12));
+    }else laiXuat=soTienVay*(1+0.08*(thoiGianVay/12));
+    alert(laiXuat)
+</script>
+
+</body>
+</html>
