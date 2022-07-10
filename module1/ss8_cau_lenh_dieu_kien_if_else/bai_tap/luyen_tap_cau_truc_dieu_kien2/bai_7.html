@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    // Giải phương trình bậc 2: ax2+bx+c=0
+    let a=parseInt(prompt("Nhập a"));
+    let b=parseInt(prompt("Nhập b"));
+    let c=parseInt(prompt("Nhập c"));
+    let delTa=b*b-4*a*c
+    let nghiem1=0
+    let nghiem2=0
+    if (delTa<0){
+        nghiem1=("Phương trình vô nghiệm");
+        nghiem2=("Phương trình vô nghiệm");
+    }
+    if (delTa==0){
+        nghiem1=nghiem2=-(b)/2*a
+    }else nghiem1=((-b)+Math.sqrt(delTa))/(2*a)
+    nghiem2=((-b)-Math.sqrt(delTa))/(2*a)
+alert(nghiem1);
+    alert(nghiem2)
+</script>
+</body>
+</html>

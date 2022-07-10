@@ -6,6 +6,14 @@
 </head>
 <body>
     <!--Tính diện tích tam giác vuông khi biết 2 cạnh kề a,b-->
-
+<script>
+    let canhA=parseInt(prompt("Nhập cạnh A"));
+    let canhB=parseInt(prompt("Nhập cạnh B"));
+    let dienTich=0
+    if (canhA>canhB){
+        dienTich=0.5*canhB*canhA
+    }else dienTich=0.5*canhA*canhB
+    alert(dienTich)
+</script>
 </body>
 </html>
