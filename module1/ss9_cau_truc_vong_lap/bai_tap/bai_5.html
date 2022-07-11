@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let soThuNhat=0;
+    let soThuHai=1;
+    let soThuN;
+    let tong=0;
+    for (let i = 0; i <20 ; i++) {
+        tong=tong+soThuNhat;
+        soThuN = soThuNhat + soThuHai;
+        soThuNhat = soThuHai;
+        soThuHai=soThuN;
+    }
+    document.write(tong);
+</script>
+</body>
+</html>
