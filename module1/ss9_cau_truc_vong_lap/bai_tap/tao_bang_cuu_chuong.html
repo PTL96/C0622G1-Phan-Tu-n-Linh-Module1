@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+
+
+<h1 style="color: crimson">BẢNG CỬU CHƯƠNG</h1>
+
+<script>
+    let sout = "<table border='1' width='100' cellspacing='1' cellpadding='3'>";
+    let a = 1;
+    let b = 1;
+    for (i = 1; i <= 10; i++) {
+        sout = sout + "<tr>";
+        for (b = 1; b < 10; b++){
+            sout = sout + "<td style='background: aqua'>" + b + "x" + i + "=" + i * b + "</td>";
+        }
+    }
+
+sout = sout + "</table>";
+    document.write(sout);
+</script>
+
+
+</body>
+</html>
