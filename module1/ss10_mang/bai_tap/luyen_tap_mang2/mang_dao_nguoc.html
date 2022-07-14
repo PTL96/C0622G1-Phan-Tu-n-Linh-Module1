@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    let arr = ["c", "s", "c", 2, 6, 1]
+    let savedValue;
+    for (let i = 0; i <arr.length/2 ; i++) {
+        savedValue=arr[i]
+        arr[i]=arr[arr.length-1-i];
+        arr[arr.length-1-i] = savedValue;
+    }
+    document.write(arr);
+</script>
+</body>
+</html>
