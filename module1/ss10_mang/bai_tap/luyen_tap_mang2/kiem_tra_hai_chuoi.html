@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = prompt("Nhập chuỗi");
+    let arr2 = prompt("Nhập chuỗi");
+    let chuoi = true;
+    if (arr1.length === arr2.length) {
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                chuoi = arr1[i] === arr2[j];
+            }
+        }
+    } else {
+        !chuoi;
+    }
+
+    if (chuoi) {
+        document.write('Hai chuỗi giống nhau');
+    } else {
+        document.write('Hai chuỗi không giống nhau');
+    }
+</script>
+</body>
+</html>
