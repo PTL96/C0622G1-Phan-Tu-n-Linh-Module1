@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = +prompt("input number");
+    isPrime(number);
+    function isPrime(number) {
+        if (number == 0 || number == 1) {
+            alert(number + ' Không phải là số Nguyên Tố');
+        }else {
+            let divisors = 0;
+            for (let i = 1; i <= number; i++) {
+                if (number % i == 0){
+                    divisors++;
+                }
+            }
+            if(divisors == 2){
+                alert(number + ' Là số Nguyên Tố');
+            }else{
+                alert(number + ' Không phải là số Nguyên Tố');
+            }
+        }
+
+
+
+
+    }
+</script>
 </body>
 </html>

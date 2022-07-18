@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let foot = +prompt("Input Foot");
+    let meter = +prompt("Input meter");
+    let meter1 = 0.305 * foot;
+    let foot1 = 3.279 * meter;
+    footToMeter();
+    meterToFoot();
+    function footToMeter() {
+        alert( '  Meter bằng: ' + meter1)
+    }
+    function meterToFoot() {
+            alert( '  Foot bằng: ' + foot1)
+    }
+</script>
 </body>
 </html>
