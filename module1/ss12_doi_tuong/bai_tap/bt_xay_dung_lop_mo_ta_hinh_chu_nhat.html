@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //  Viết một lớp các đối tượng hình chữ nhật lấy tên là Rectangle, mỗi hình chữ nhật đều có những đặc tính sau
+    //  + Có thông số chiều dài (int).
+    //
+    // + Có thông số chiều rộng (int).
+    //
+    // + Có tính năng tính diện tích.
+    //
+    // + Có tính năng tính chu vi.
+    let chieuDai = +prompt('Nhập chiều dài');
+    let chieuRong = +prompt('Nhập chiều rộng');
+    let kq=0;
+    class Rectangle {
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai=chieuDai;
+            this.chieuRong=chieuRong;
+        }
+        tinhCv(){
+            return(this.chieuDai+this.chieuRong)*2
+        }
+        tinhDienTich() {
+            return(this.chieuDai*this.chieuRong)
+        }
+    }
+    let hcn=new Rectangle(chieuDai,chieuRong);
+    document.write("Chu vi hình chữ nhật là:" +hcn.tinhCv() + "cm" + "<br>")
+    document.write("Diện tích hình chữ nhật là:" + hcn.tinhDienTich() + "cm2" +"<br>")
+</script>
 </body>
 </html>

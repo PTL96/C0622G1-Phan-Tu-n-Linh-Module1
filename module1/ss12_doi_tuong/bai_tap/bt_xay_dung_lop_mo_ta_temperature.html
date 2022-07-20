@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    // [Bài tập] Xây dựng lớp mô tả Temperature
+    let doC = +prompt("Nhập nhiệt độ C cần đổi");
+    class Temperature{
+        constructor(doC) {
+            this.doC = doC;
+        }
+        tinhDoF(){
+            return(9/5*this.doC+32);
+        }
+        tinhDoKenvin(){
+            return(this.doC+273.15);
+        }
+    }
+    let nhietDo = new Temperature(doC);
+    document.write("Độ F là : " + nhietDo.tinhDoF() + "<br>")
+    document.write("Độ KenVin là : " + nhietDo.tinhDoKenvin() + "<br>")
+
+</script>
 </body>
 </html>
