@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    // Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh
+    // của một tam giác là:
+    let soA = +parseInt(prompt("Nhập số thứ nhất"));
+    let soB = +parseInt(prompt("Nhập số thứ hai"));
+    let soC = +parseInt(prompt("Nhập số thứ ba"));
+    if (soA+soB>soC && soB+soC>soA && soA+soC>soB && soA > 0 && soB > 0 && soC > 0){
+        alert("Đây là cạnh tam giác")
+    }else {
+        alert("Không phải cạnh tam giác")
+    }
+
+</script>
+
+</body>
+</html>

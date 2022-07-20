@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<!-- Gọi dưới 10 phút cước phí sẽ là 2000VNĐ/phút
+Gọi trên 10 phút cước phí sẽ là 1500VNĐ/phút-->
+<script>
+    // Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+    let soPhutGoi=prompt("Nhập số phút gọi");
+    let cuocPhi=(0);
+    if (soPhutGoi<10){
+        cuocPhi=soPhutGoi*2000
+    }
+    else if (soPhutGoi>=10){
+        cuocPhi=soPhutGoi*1500
+    }
+    alert(cuocPhi)
+
+</script>
+</body>
+</html>

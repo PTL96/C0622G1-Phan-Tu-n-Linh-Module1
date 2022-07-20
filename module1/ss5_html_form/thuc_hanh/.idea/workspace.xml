@@ -20,9 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d08c09e-723e-47f3-8ad6-1814ffc95ee7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/form_tim-kiem_google.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tao_bang_co_ban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_git_github_html/ss5_HTML_frorm_table.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss4_git_github_html/untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_git_github_html/untitled/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_git_github_html/untitled/ss5_HTML_frorm_table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_git_github_html/untitled/thuc_hanh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_form_table/bai_tap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bai_tap_thoi_khoa_bieu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_form_dang_ky_hoc_vien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_tao_form_co_ban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_tao_form_co_ban_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/form_lay_survey_khach_hang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tao_bang_nâng_cao.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +49,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="2BNXsKoMLvZOmFELUX6idB75DwN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,6 +60,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -72,7 +84,11 @@
       <workItem from="1656764193749" duration="645000" />
       <workItem from="1656841189868" duration="4765000" />
       <workItem from="1656892756900" duration="2772000" />
-      <workItem from="1656896689475" duration="632000" />
+      <workItem from="1656896689475" duration="5108000" />
+      <workItem from="1656911270047" duration="13586000" />
+      <workItem from="1656928793455" duration="3922000" />
+      <workItem from="1656934959700" duration="2255000" />
+      <workItem from="1656979877303" duration="2188000" />
     </task>
     <servers />
   </component>
