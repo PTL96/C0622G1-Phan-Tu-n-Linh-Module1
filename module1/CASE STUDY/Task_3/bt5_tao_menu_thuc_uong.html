@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu order</title>
+</head>
+<body>
+<script>
+    let luaChon;
+    let menu = ["Cafe","cam vat", "nuoc ep ca rot", "nuoc ep ca cua", "nuoc loc", "nuoc dua", "thoat"];
+    let giaTien = [10000,7000,8000,9000,5000,6000];
+    do{
+        luaChon = +prompt("1. Cafe\n2. Cam vat\n3. Nuoc ep ca rot\n4. Nuoc ep ca chua\n5.Nuoc loc\n6.Nuoc dua\n7.Thoat");
+        if (luaChon > 0 && luaChon < 8){
+            if (luaChon == 7){
+                break;
+            }else{
+               prompt("Gia tien: "+giaTien[luaChon-1]+"VND; Nhap so ly "+ menu[luaChon-1]+" ban muon dat");
+            }
+        }
+    }while(luaChon != 7);
+</script>
+</body>
+</html>
