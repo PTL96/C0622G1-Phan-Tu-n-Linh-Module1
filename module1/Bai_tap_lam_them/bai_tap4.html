@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MayTinh {
+        constructor(maMay, tenMay, tenHang, giaBan) {
+            this.maMay = maMay;
+            this.tenMay = tenMay;
+            this.tenHang = tenHang;
+            this.giaBan = giaBan;
+      }
+        setMaMay(maMay) {
+
+            this.maMay = maMay;
+      }
+        setTenMay(tenMay) {
+            this.tenMay = tenMay;
+      }
+        setTenHang(tenHang) {
+            this.tenHang = tenHang;
+      }
+        setGiaBan(giaBan) {
+            this.giaBan = giaBan;
+      }
+        getMaMay() {
+            return this.maMay;
+      }
+        getTenMay() {
+            return this.tenMay;
+      }
+        getTenHang() {
+            return this.tenHang;
+      }
+        getGiaBan() {
+            return this.giaBan;
+      }
+      }
+​
+    let may1 = new MayTinh("LP-1789", "lpl", "Lenovo", '20.000.000 VNĐ');
+    let may2 = new MayTinh("LP-1354", "Macbook", "Apple", '28.000.000 VNĐ');
+    let may3 = new MayTinh("LP-3689", "victus", "HP", '21.000.000 VNĐ');
+    let danhSachMay = [may1, may2, may3];
+    display(danhSachMay);
+
+    function themMoi() {
+        let maMay = prompt("nhập vào mã máy");
+        let tenMay = prompt("nhập vào tên máy");
+        let tenHang = prompt("nhập vào tên hãng");
+        let giaBan = prompt('Nhập giá bán')
+        let mayMoi = new (maMay, tenMay, tenHang, giaBan);
+        danhSachMay.push(mayMoi);
+        display(danhSachMay);
+    }
+
+    function display(danhSach) {
+    }
+</script>
+</body>
+</html>

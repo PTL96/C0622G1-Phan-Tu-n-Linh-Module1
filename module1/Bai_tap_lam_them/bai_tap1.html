@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1: Nhập từ bàn phím mảng số nguyên gồm n phần tử (n<=50). Hiển thị ra màn hình danh sách các phần tử của mảng,
+    //     Hiện thị giá trị = tổng các số ở vị trí chắn – tổng các số ở vị trí lẻ
+    // Ví dụ: [15,2,3,5,10,15,7]. Kết quả sau khi thực hiện là: (15+3+10+7)-(2+5+15) = ?
+    //     Thang điểm
+
+    let doDai = +prompt('Nhập độ dài phần tử');
+    let soNguyen = [];
+    let chan =0;
+    let le = 0;
+    let giaTri = 0;
+    if (doDai>50){
+        alert('Nhập lại')
+    }else {
+        for (let i = 0; i <doDai ; i++) {
+            soNguyen[i] = +prompt('Nhập phần tử');
+        }
+    }document.write(soNguyen);
+    for (let i = 0; i <soNguyen[i] ; i++) {
+        if (i % 2 === 0){
+            chan= chan+soNguyen[i];
+        }else {
+            le = le+soNguyen[i];
+        }
+    }document.write(chan-le);
+</script>
+</body>
+</html>
