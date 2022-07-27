@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<p id="display"></p>
 <script>
     class MayTinh {
         constructor(maMay, tenMay, tenHang, giaBan) {
@@ -12,34 +13,41 @@
             this.tenMay = tenMay;
             this.tenHang = tenHang;
             this.giaBan = giaBan;
-      }
+        }
+
         setMaMay(maMay) {
 
             this.maMay = maMay;
-      }
+        }
+
         setTenMay(tenMay) {
             this.tenMay = tenMay;
-      }
+        }
+
         setTenHang(tenHang) {
             this.tenHang = tenHang;
-      }
+        }
+
         setGiaBan(giaBan) {
             this.giaBan = giaBan;
-      }
+        }
+
         getMaMay() {
             return this.maMay;
-      }
+        }
+
         getTenMay() {
             return this.tenMay;
-      }
+        }
+
         getTenHang() {
             return this.tenHang;
-      }
+        }
+
         getGiaBan() {
             return this.giaBan;
-      }
-      }
-​
+        }
+    }
     let may1 = new MayTinh("LP-1789", "lpl", "Lenovo", '20.000.000 VNĐ');
     let may2 = new MayTinh("LP-1354", "Macbook", "Apple", '28.000.000 VNĐ');
     let may3 = new MayTinh("LP-3689", "victus", "HP", '21.000.000 VNĐ');
@@ -57,6 +65,25 @@
     }
 
     function display(danhSach) {
+        let tableString ='<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Mã máy</th>\n' +
+            '        <th>Tên máy</th>\n' +
+            '        <th>Tên Hãng</th>\n' +
+            '        <th>Giá tiền</th>\n' +
+            '    </tr>';
+        for (let i = 0; i <danhSach.length ; i++) {
+            tableString +='<tr>\n' +
+                '        <td>'+(i+1)+'</td>\n' +
+                '        <td>'+danhSach[i].getMaMay()+'</td>\n' +
+                '        <td>'+danhSach[i].getTenMay()+'</td>\n' +
+                '        <td>'+danhSach[i].getTenHang()+'</td>\n' +
+                '        <td>'+danhSach[i].getGiaBan()+'</td>\n' +
+                '    </tr>';
+        }
+        tableString += '</table>';
+        document.getElementById("display").innerHTML = tableString;
     }
 </script>
 </body>
